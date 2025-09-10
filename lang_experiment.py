@@ -19,7 +19,7 @@ import prompts as pmt
 OLLAMA_MODEL = "gemma:latest" 
 EMBEDDING_MODEL = "nomic-embed-text"
 PERSIST_DIRECTORY = "chroma_health_db"
-OLLAMA_API_URL = "https://4dff1e7640fc.ngrok-free.app/"
+OLLAMA_API_URL = "HOSTED_OLLAMA_SERVER"
 QUERY_CACHE_VECTORS_DIR = "./chroma_db_query_cache" # For question embeddings
 QUERY_CACHE_KV_PATH = "./query_cache_kv.json"     # For question -> answer mapping
 
@@ -172,6 +172,7 @@ with gr.Blocks() as demo:
 
     msg.submit(respond, [msg, chatbot], [msg, chatbot])
     clear.click(lambda: None, None, chatbot, queue=False)
+
 
 
 demo.launch()
