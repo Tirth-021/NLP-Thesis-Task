@@ -16,10 +16,10 @@ import prompts as pmt
 
 #set_llm_cache(SQLiteCache(database_path="llm_cache.db"))
 
-OLLAMA_MODEL = "phi4-mini:latest" 
+OLLAMA_MODEL = "gemma:latest" 
 EMBEDDING_MODEL = "nomic-embed-text"
 PERSIST_DIRECTORY = "chroma_health_db"
-OLLAMA_API_URL = "#Hosted_Ollama_URL"
+OLLAMA_API_URL = "https://4dff1e7640fc.ngrok-free.app/"
 QUERY_CACHE_VECTORS_DIR = "./chroma_db_query_cache" # For question embeddings
 QUERY_CACHE_KV_PATH = "./query_cache_kv.json"     # For question -> answer mapping
 
