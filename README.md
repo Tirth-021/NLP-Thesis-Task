@@ -10,7 +10,7 @@ This project is a healthcare information assistant chatbot built with LangChain,
 
 - Semantic search on health FAQs using vector embeddings
 - Cache layer to speed up repeated queries based on similarity
-- Integration with Ollama LLM for generating responses
+- Integration with Ollama LLMs for generating responses
 - Simple web interface using Gradio for interaction
 - Educational purpose with disclaimer on medical advice
 
